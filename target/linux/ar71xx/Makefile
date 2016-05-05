@@ -10,7 +10,8 @@ ARCH:=mips
 BOARD:=ar71xx
 BOARDNAME:=Atheros AR7xxx/AR9xxx
 FEATURES:=usbgadget source-only
-CPU_TYPE:=24kc
+CPU_TYPE:=74kc
+CPU_SUBTYPE:=dsp2
 SUBTARGETS:=generic tiny nand mikrotik
 
 KERNEL_PATCHVER:=4.14
