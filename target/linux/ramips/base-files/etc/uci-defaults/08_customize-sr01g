@@ -1,0 +1,15 @@
+#!/bin/sh
+uci set system.@system[0].hostname=SR01G
+uci set wireless.default_radio0.ssid=Sprint-5G
+uci set wireless.default_radio1.ssid=Sprint-2,4G
+uci set uhttpd.defaults.commonname=SR01G
+uci set wireless.radio0.disabled=0
+uci set wireless.radio1.disabled=0
+uci set wireless.radio1.htmode=HT40
+uci set wireless.radio0.htmode=VHT80
+uci set wireless.radio1.country=BG
+uci set wireless.radio0.country=BG
+uci set firewall.@defaults[0].flow_offloading=1
+uci set firewall.@defaults[0].flow_offloading_hw=1
+uci commit
+
