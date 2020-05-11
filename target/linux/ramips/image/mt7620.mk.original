@@ -1015,6 +1015,7 @@ define Device/sprint_sr01g
   MTK_SOC := mt7620a
   IMAGE_SIZE := 15872k
   DEVICE_VENDOR := Sprint
+  IMAGES += factory.bin
   DEVICE_MODEL := SR01G
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-mt76x0e
   SUPPORTED_DEVICES += SR01g
@@ -1101,15 +1102,6 @@ define Device/zbtlink_zbt-we2026
   SUPPORTED_DEVICES += zbt-we2026
 endef
 TARGET_DEVICES += zbtlink_zbt-we2026
-
-define Device/spr_sr02
-  SOC := mt7620n
-  IMAGE_SIZE := 7552k
-  DEVICE_VENDOR := Sprint
-  DEVICE_MODEL := SPR-SR02
-  SUPPORTED_DEVICES += spr-sr02
-endef
-TARGET_DEVICES += sprint_sr02
 
 define Device/zbtlink_zbt-we826-16m
   SOC := mt7620a

@@ -70,6 +70,11 @@ zyxel,keenetic-omni-ii|\
 zyxel,keenetic-viva)
 	set_wifi_led "$boardname:green:wifi"
 	;;
+sprint,sr01g)
+	ucidef_set_led_switch "lan" "lan" "$boardname:green:lan" "switch0" "0x1f"
+        ucidef_set_led_switch "wan" "wan" "$boardname:green:wan" "switch0" "0x20"
+	set_wifi_led "$boardname:green:wifi" "wlan1"
+        ;;
 dlink,dwr-118-a1)
 	ucidef_set_led_switch "lan" "lan" "$boardname:green:lan" "switch0" "0x1f"
 	ucidef_set_led_switch "wan" "wan" "$boardname:green:wan" "switch0" "0x20"
@@ -220,6 +225,9 @@ zbtlink,zbt-we1026-h-32m)
 zbtlink,zbt-we2026)
 	set_wifi_led "$boardname:green:wlan"
 	;;
+sprint,spr-sr02)
+        set_wifi_led "$boardname:green:wlan"
+        ;;
 esac
 
 board_config_flush
