@@ -1109,7 +1109,7 @@ define Device/spr_sr02
   DEVICE_MODEL := SPR-SR02
   SUPPORTED_DEVICES += spr-sr02
 endef
-TARGET_DEVICES += sprint_sr02
+TARGET_DEVICES += spr_sr02
 
 define Device/zbtlink_zbt-we826-16m
   SOC := mt7620a
