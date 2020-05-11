@@ -670,6 +670,9 @@ ramips_board_detect() {
 	*"ZBT-WE2026")
 		name="zbt-we2026"
 		;;
+        *"SPR-SR02")
+                name="SPR-SR02"
+                ;;
 	*"ZBT-WE826 (16M)")
 		name="zbt-we826-16M"
 		;;
@@ -703,6 +706,9 @@ ramips_board_detect() {
 	*"YK1")
 		name="youku-yk1"
 		;;
+	*"SPR-SR02")
+                name="spr-sr02"
+                ;;
 	esac
 
 	# use generic board detect if no name is set
