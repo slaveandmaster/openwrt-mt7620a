@@ -6,8 +6,8 @@
 #include "mt7620n.dtsi"
 
 / {
-	compatible = "zbtlink,zbt-we2026", "ralink,mt7620n-soc";
-	model = "Sprint SPR-WE2026";
+	compatible = "sprint,spr-sr02", "ralink,mt7620n-soc";
+	model = "Sprint SPR-SR02";
 
 	aliases {
 		led-boot = &led_power;
@@ -24,12 +24,12 @@
 		compatible = "gpio-leds";
 
 		led_power: power {
-			label = "zbt-we2026:red:power";
+			label = "spr-sr02:red:power";
 			gpios = <&gpio1 14 GPIO_ACTIVE_LOW>;
 		};
 
 		wlan {
-			label = "zbt-we2026:green:wlan";
+			label = "spr-sr02:green:wlan";
 			gpios = <&gpio3 0 GPIO_ACTIVE_LOW>;
 		};
 	};

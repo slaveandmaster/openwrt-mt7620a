@@ -1096,15 +1096,16 @@ TARGET_DEVICES += zbtlink_zbt-we1026-h-32m
 define Device/zbtlink_zbt-we2026
   SOC := mt7620n
   IMAGE_SIZE := 7552k
-  DEVICE_VENDOR := Zbtlink
-  DEVICE_MODEL := ZBT-WE2026
-  SUPPORTED_DEVICES += zbt-we2026
+  DEVICE_VENDOR := Sprint
+  DEVICE_MODEL := SPR-WE2026
+  SUPPORTED_DEVICES += zbt-we2026 spr-sr02
 endef
 TARGET_DEVICES += zbtlink_zbt-we2026
 
 define Device/spr_sr02
   SOC := mt7620n
-  IMAGE_SIZE := 7552k
+  IMAGE_SIZE := 7872k
+  IMAGES += factory.bin
   DEVICE_VENDOR := Sprint
   DEVICE_MODEL := SPR-SR02
   SUPPORTED_DEVICES += spr-sr02
