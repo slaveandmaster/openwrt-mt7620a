@@ -27,6 +27,9 @@ wnce2001|\
 zbt-we2026)
 	set_wifi_led "$boardname:green:wlan"
 	;;
+spr-we2026)
+        set_wifi_led "$boardname:green:wlan"
+        ;;
 spr-sr02)
         set_wifi_led "$boardname:green:wlan"
         ;;

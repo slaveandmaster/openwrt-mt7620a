@@ -214,6 +214,10 @@ ramips_setup_interfaces()
 		ucidef_add_switch "switch0" \
 			"0:lan:4" "1:lan:3" "2:lan:2" "3:lan:1" "4:wan:5" "6@eth0"
 		;;
+        sprintlink,spr-we2026)
+                ucidef_add_switch "switch0" \
+                        "0:lan:4" "1:lan:3" "2:lan:2" "3:lan:1" "4:wan:5" "6@eth0"
+                ;;
 	sprint,spr-sr02)
                 ucidef_add_switch "switch0" \
                         "0:lan:4" "1:lan:3" "2:lan:2" "3:lan:1" "4:wan:5" "6@eth0"
@@ -264,6 +268,7 @@ ramips_setup_macs()
 	zbtlink,zbt-we826-32m|\
 	zbtlink,zbt-we826-e|\
 	zbtlink,zbt-wr8305rt)\
+	sprintlink,spr-we2026)\
 	sprint,spr-sr02|\
 	sprint,sr04g)
 		wan_mac=$(macaddr_add "$(mtd_get_mac_binary factory 0x4)" 1)

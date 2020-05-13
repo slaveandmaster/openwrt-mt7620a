@@ -225,6 +225,9 @@ zbtlink,zbt-we1026-h-32m)
 zbtlink,zbt-we2026)
 	set_wifi_led "$boardname:green:wlan"
 	;;
+sprintlink,spr-we2026)
+        set_wifi_led "$boardname:green:wlan"
+        ;;
 sprint,spr-sr02)
         set_wifi_led "$boardname:green:wlan"
         ;;
